@@ -45,6 +45,7 @@ fun AppNavigator() {
     NavHost(navController = navController, startDestination = "landing") {
         composable("landing") { LandingScreen(navController) }
         composable("dashboard") { DashboardScreen(navController) }
+        composable("connection") { ConnectionScreen(navController) }
     }
 }
 
@@ -56,7 +57,7 @@ fun LandingScreen(navController: NavController) {
             contentDescription = "Background Image",
             modifier = Modifier
                 .fillMaxSize()
-                .blur(10.dp),
+                .blur(20.dp),
             contentScale = ContentScale.Crop
         )
 
@@ -65,20 +66,30 @@ fun LandingScreen(navController: NavController) {
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            Spacer(modifier = Modifier.height(50.dp))
+            Spacer(modifier = Modifier.height(60.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.ecowindlogo),
+                contentDescription = "App Logo",
+                modifier = Modifier.height(200.dp)
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
             Text(
                 text = "Eco Wind",
-                fontSize = 32.sp,
-                fontWeight = FontWeight.Bold,
-                color = Color.White
+                fontSize = 40.sp,
+                fontWeight = FontWeight.Thin,
+                color = Color.White,
+                letterSpacing = 4.sp
             )
 
             Spacer(modifier = Modifier.weight(1f))
 
             Text(
-                text = "Your Smart Irrigation Solution. Connect to your Smart Farm seamlessly through our application.",
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Medium,
+                text = "Rüzgarin Gücüyle Akilli Tarim, Suyu Koru, Depola, Geleceji Yasat!",
+                fontSize = 40.sp,
+                fontWeight = FontWeight.Thin,
                 color = Color.White,
                 textAlign = TextAlign.Center,
                 modifier = Modifier.padding(horizontal = 32.dp)
