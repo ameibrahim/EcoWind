@@ -66,7 +66,7 @@ fun DashboardScreen(navController: NavController) {
                             .height(20.dp)
                             .width(20.dp), tint = Color.White)
                     }
-                    IconButton(onClick = { /* Open settings */ }) {
+                    IconButton(onClick = { navController.navigate("settings")}) {
                         Icon(painter = painterResource(id = R.drawable.setting), contentDescription = "Settings", Modifier
                             .height(20.dp)
                             .width(20.dp), tint = Color.White)
@@ -85,7 +85,9 @@ fun DashboardScreen(navController: NavController) {
 //                    strokeWidth = 8.dp,
 //                )
 
-                CircularSlider(thumbColor = Color.White, progressColor = Color(0xFF467864),  modifier = Modifier.size(360.dp), stroke = 30f, progress = sliderValue)
+                CircularSlider(thumbColor = Color.White, progressColor = Color(0xFF467864),  modifier = Modifier.size(360.dp), stroke = 30f, progress = sliderValue,                 onChange = { newValue ->  // Capture the value and update state
+                    sliderValue = (newValue * 100).coerceIn(0f, 100f)
+                })
 
                 Column(
                     horizontalAlignment = Alignment.CenterHorizontally
@@ -99,29 +101,7 @@ fun DashboardScreen(navController: NavController) {
 
 //                    Spacer(modifier = Modifier.height(20.dp))
 
-                    // Toggle Button
-//                    Switch(
-//                        checked = isToggleOn,
-//                        onCheckedChange = { isToggleOn = it },
-//                        colors = SwitchColors(
-//                            checkedThumbColor = Color.White,
-//                            checkedTrackColor = Color(0xFF467864),
-//                            checkedBorderColor = Color.White,
-//                            checkedIconColor = Color(0xFF467864),
-//                            uncheckedThumbColor = Color.Gray,
-//                            uncheckedTrackColor = Color.White,
-//                            uncheckedBorderColor = Color(0xFF467864),
-//                            uncheckedIconColor = Color(0xFF467864),
-//                            disabledCheckedThumbColor = Color(0xFF467864),
-//                            disabledCheckedTrackColor = Color(0xFF467864),
-//                            disabledCheckedBorderColor = Color(0xFF467864),
-//                            disabledCheckedIconColor = Color(0xFF467864),
-//                            disabledUncheckedThumbColor = Color(0xFF467864),
-//                            disabledUncheckedTrackColor = Color(0xFF467864),
-//                            disabledUncheckedBorderColor = Color(0xFF467864),
-//                            disabledUncheckedIconColor = Color(0xFF467864)
-//                        )
-//                    )
+
                 }
             }
 

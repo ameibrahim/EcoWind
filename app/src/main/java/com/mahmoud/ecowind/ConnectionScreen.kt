@@ -40,13 +40,6 @@ fun ConnectionScreen(navController: NavController){
                 Image(painter = painterResource(id = R.drawable.ecowindmainlogo),
                     contentDescription = "App Logo",
                     modifier = Modifier.height(30.dp))
-//                    Spacer(modifier = Modifier.width(10.dp))
-//                    Text(
-//                        text = "EcoWind",
-//                        fontSize = 32.sp,
-//                        fontWeight = FontWeight.Bold,
-//                        color = Color(0xFF467864)
-//                    )
             }
 
             Spacer(modifier = Modifier.weight(1f))
@@ -67,6 +60,8 @@ fun ConnectionScreen(navController: NavController){
             Spacer(modifier = Modifier.weight(1f))
 
             TextViewWithImage("ConnectionType", "Bluetooth", R.drawable.bluetooth)
+            Spacer(modifier = Modifier.height(10.dp))
+            TextViewWithImage("ConnectionRange", "50ms", R.drawable.arrowsboth)
 
             Spacer(modifier = Modifier.weight(1f))
 
