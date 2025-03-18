@@ -87,7 +87,7 @@ fun LandingScreen(navController: NavController) {
             Spacer(modifier = Modifier.weight(1f))
 
             Text(
-                text = "Rüzgarin Gücüyle Akilli Tarim, Suyu Koru, Depola, Geleceji Yasat!",
+                text = "Rüzgarın Gücüyle Akıllı Tarım, Suyu Koru, Depola, Geleceji Yaşat!",
                 fontSize = 40.sp,
                 fontWeight = FontWeight.Thin,
                 color = Color.White,
