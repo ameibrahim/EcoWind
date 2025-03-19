@@ -48,7 +48,7 @@ fun ConnectionScreen(navController: NavController){
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.Center) {
                 Text(
-                    text = "Connection",
+                    text = "Bağlantı",
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color(0xFF467864)
@@ -59,9 +59,9 @@ fun ConnectionScreen(navController: NavController){
             ConnectionCircle()
             Spacer(modifier = Modifier.weight(1f))
 
-            TextViewWithImage("ConnectionType", "Bluetooth", R.drawable.bluetooth)
+            TextViewWithImage("BağlantıTürü", "Bluetooth", R.drawable.bluetooth)
             Spacer(modifier = Modifier.height(10.dp))
-            TextViewWithImage("ConnectionRange", "50ms", R.drawable.arrowsboth)
+            TextViewWithImage("BağlantıMenzili", "50ms", R.drawable.arrowsboth)
 
             Spacer(modifier = Modifier.weight(1f))
 
@@ -104,7 +104,7 @@ fun ConnectionCircle(){
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "ON",
+                text = "AÇİK",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
