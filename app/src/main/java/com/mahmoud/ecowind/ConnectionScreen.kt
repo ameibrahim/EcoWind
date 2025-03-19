@@ -59,9 +59,9 @@ fun ConnectionScreen(navController: NavController){
             ConnectionCircle()
             Spacer(modifier = Modifier.weight(1f))
 
-            TextViewWithImage("BağlantıTürü", "Bluetooth", R.drawable.bluetooth)
+            TextViewWithImage("Bağlantı Türü", "Bluetooth", R.drawable.bluetooth)
             Spacer(modifier = Modifier.height(10.dp))
-            TextViewWithImage("BağlantıMenzili", "50ms", R.drawable.arrowsboth)
+            TextViewWithImage("Bağlantı Menzili", "50ms", R.drawable.arrowsboth)
 
             Spacer(modifier = Modifier.weight(1f))
 
@@ -104,7 +104,7 @@ fun ConnectionCircle(){
             contentAlignment = Alignment.Center
         ) {
             Text(
-                text = "AÇİK",
+                text = "AÇIK",
                 fontSize = 18.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black
