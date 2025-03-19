@@ -58,7 +58,7 @@ fun SettingsScreen(navController: NavController){
 
             Row(modifier = Modifier.fillMaxWidth()){
                 Text(
-                    text = "Settings",
+                    text = "Ayarlar",
                     fontSize = 32.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color(0xFF467864)
@@ -69,7 +69,7 @@ fun SettingsScreen(navController: NavController){
 
             // Dark Mode Toggle
             SettingToggleItem(
-                title = "Dark Mode",
+                title = "Karanlık Mod",
                 iconId = R.drawable.light,
                 checked = darkMode,
                 onCheckedChange = { darkMode = it }
@@ -79,7 +79,7 @@ fun SettingsScreen(navController: NavController){
 
             // Notifications Toggle
             SettingToggleItem(
-                title = "Enable Notifications",
+                title = "Bildirimleri Etkinleştir",
                 iconId = R.drawable.notification,
                 checked = notificationsEnabled,
                 onCheckedChange = { notificationsEnabled = it }
@@ -88,7 +88,7 @@ fun SettingsScreen(navController: NavController){
             CustomDivider()
 
             SettingClickableItem(
-                title = "Units",
+                title = "Birimler",
                 iconId = R.drawable.celcius,
                 onClick = { /* Open Help page */ }
             )
@@ -97,7 +97,7 @@ fun SettingsScreen(navController: NavController){
 
             // Help & Support
             SettingClickableItem(
-                title = "App Tutorial",
+                title = "Uygulama Kılavuzu",
                 iconId = R.drawable.tutorial,
                 onClick = { /* Open Help page */ }
             )

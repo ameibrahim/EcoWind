@@ -125,11 +125,11 @@ fun DashboardScreen(navController: NavController) {
 
             // Water Control
             Column(modifier = Modifier.padding(horizontal = 10.dp)) {
-                TextViewWithImage(text = "Humidity", value = "40%", R.drawable.humidity)
+                TextViewWithImage(text = "Nem", value = "40%", R.drawable.humidity)
                 Spacer(modifier = Modifier.height(20.dp))
-                TextViewWithImage(text = "Temperature", value = "24℃", R.drawable.thermometer)
+                TextViewWithImage(text = "Sıcaklık", value = "24℃", R.drawable.thermometer)
                 Spacer(modifier = Modifier.height(20.dp))
-                TextViewWithImage(text = "Soil Moisture", value = "70%", R.drawable.moisturizing)
+                TextViewWithImage(text = "Toprak Nemliliği", value = "70%", R.drawable.moisturizing)
             }
 
             Spacer(modifier = Modifier.height(100.dp))
